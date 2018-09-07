@@ -1,0 +1,21 @@
+module controlLogic;
+input T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10,T11,T12,T13,T14,T15; //SC
+input D0,D1,D2,D3,D4,D5,D6,D7; //REG INSTS
+input S0,S1,S2,S3,S4,S5; //IMM INSTS
+input A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13; //MEM INSTS
+input[15..0] IR1, IR2;
+
+output INCPC, LDAR, LDACC, LDDR, Start, IncSCBar, LDIR1, LDIR2
+output B0,B1,B2,B3,B4,B5,B6,B7,B8,B9,B10; //BUS
+
+
+assign B0 = T2.Ready + 
+assign B3 = T0 + 
+assign LDAR = T0 + 
+assign INCPC = T0 + T3.IR1[15]
+assign Start = T1 + 
+assign IncSCBar = T1 + 
+assign LDIR1 = T2.Ready +  
+ 
+
+endmodule 
